@@ -88,7 +88,7 @@ body {
 }
 
 .paragraph-text {
-  width: 50%;
+  width: 100%;
   padding-left: 24px; 
   margin-top: 40px;
   
@@ -114,7 +114,32 @@ body {
 }
 
 .about {
-  min-height: 100vh;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  gap: 20px; 
+  padding: 10px; 
+  height: 100vh; 
+  box-sizing: border-box; 
+}
+
+.about-content {
+  flex: 1;         
+  max-width: 50%;     
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 250px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;  
 }
 
 .pill-nav {
